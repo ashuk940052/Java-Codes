@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/src/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Odd_Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Parallelogram_Pattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pattern_11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pattern_110.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pattern_8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pattern_9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sum_pattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +45,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2J092GqwBr7sVhX352tH27iaWkz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -123,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671388355288</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="initial version">
+      <created>1671563521779</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671563521779</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
