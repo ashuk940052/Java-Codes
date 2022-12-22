@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/src/Odd_Class.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Parallelogram_Pattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pattern_11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pattern_110.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pattern_8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pattern_9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sum_pattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Binnary_to_decimal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Reverse_of_a_number.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sum_and_Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Term_Of_AP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671563521779</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="initial version">
+      <created>1671646246800</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671646246800</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
