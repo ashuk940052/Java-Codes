@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="initial version">
-      <change afterPath="$PROJECT_DIR$/src/Set_0_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Bubble_sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Insertion_Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Merge_two_sorted_array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Selection_Sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Set_0_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Set_0_1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671986980101</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="initial version">
+      <created>1672079201650</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672079201650</updated>
+    </task>
+    <task id="LOCAL-00017" summary="initial version">
+      <created>1672079213589</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672079213589</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
