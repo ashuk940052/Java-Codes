@@ -4,11 +4,12 @@ public class Set_0_1 {
         int count0 =0;
         int p=arr.length;
         int[] arrn =new int[p];
-        for(int i=0 ; i<p ; i++) {
-            if (arr[i] == 0) {
+        for (int j : arr) {
+            if (j == 0) {
                 count0++;
             }
-        }for(int i=0 ; i<count0 ; i++){
+        }
+        for(int i = 0; i<count0 ; i++){
             arrn[i]=0;
         }
         for (int i =count0 ; i<p ; i++){
