@@ -2,28 +2,29 @@ import java.util.*;
 public class Reverse_String_Wordwise {
     public static String reverseWordWise(String str) {
      int last_index=0;
-     StringBuilder ans = new StringBuilder();
+     String ans = "";
      int i=0;
      for(;i<str.length();i++){
-         StringBuilder rev = new StringBuilder();
+         int current_index= i;
+         String rev = "";
          if(str.charAt(i)==' '){
-             for(int j = i; j>=last_index; j--){
-                 rev.insert(0, str.charAt(j));
+             for(int j= current_index; j>=last_index;j--){
+                 rev = str.charAt(j)+rev ;
              }
-             ans.insert(0, rev);
+             ans = rev+ans ;
              last_index = i+1;
          }
 
      }
      int current_space= i;
-     StringBuilder rev = new StringBuilder();
+     String rev ="";
         for(int j= current_space-1; j>=last_index;j--) {
-            rev.insert(0, str.charAt(j));
+            rev = str.charAt(j) + rev;
         }
-        rev.append(" ");
-        ans.insert(0, rev.toString());
+        rev =rev+" ";
+        ans = rev + ans;
 
-        return ans.toString();
+        return ans;
 
 
       }
