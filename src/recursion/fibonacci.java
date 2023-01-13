@@ -1,8 +1,8 @@
 package recursion;
 import java.util.*;
 public class fibonacci {
-    public static int fibo(int n){
-        if(n==0 || n==1){
+    public static long fibo(int n){
+        if( n<=1){
             return n;
         }
         return fibo(n-1)+fibo(n-2);
@@ -14,7 +14,7 @@ public class fibonacci {
         int n = sc.nextInt();
 
          for(int i=0; i<n ; i++) {
-             int ans = fibo(i);
+             long ans = fibo(i);
              System.out.print( ans+" ");
          }
     }

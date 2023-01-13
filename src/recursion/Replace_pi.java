@@ -14,7 +14,7 @@ public class Replace_pi {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your String :");
-        String s = sc.next();
+        String s = sc.nextLine();
         String ans = replace(s);
         System.out.println(ans);
 
