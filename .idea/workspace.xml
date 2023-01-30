@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Link_List/Link_list_use.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Link_List/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Link_List/Link_List_use.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Link_List/Link_list_use.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Link_List/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Link_List/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,26 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Link_list_use" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Link_List.Link_list_use" />
+      <module name="Java Codes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Link_List.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Link_list_use" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -355,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674841949786</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="DSA">
+      <created>1674935664176</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1674935664176</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
