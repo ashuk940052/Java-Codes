@@ -67,6 +67,15 @@ public class Link_List_use {
             head = head.next;
         }
     }
+    public static int length(Node<Integer> head){
+        Node<Integer> temp = head ;
+        int i=0;
+        while (temp != null){
+            i++;
+            temp = temp.next;
+        }
+        return i;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Node<Integer> Prashant = takeInput();
@@ -83,6 +92,9 @@ public class Link_List_use {
         Prashant=deleteNode(deletePos,Prashant);
         System.out.println();
         print(Prashant);
+        int length_of_ll = length(Prashant);
+        System.out.println(length_of_ll);
+
 
     }
 }
