@@ -3,20 +3,59 @@ package Link_List;
 import java.util.Scanner;
 
 public class Link_List_use {
+    public static Node<Integer> deleteNode(int pos,Node<Integer> head){
+        Node<Integer> temp = head;
+        if(head==null){
+            return null;
+        }
+        if(pos == 0){
+            return head.next;
+        }
+        int i =0;
+        while (i<pos-1 && temp != null){
+            temp = temp.next;
+            i++;
+        }
+        if(temp == null){
+            return head;
+        }
+        if (temp != null){
+        temp.next =temp.next.next;}
+        return head;
+    }
+    public static Node<Integer> InsertNode(int pos , int data , Node<Integer> head){
+        Node<Integer> newNode = new Node<>(data);
+        if(pos==0){
+            newNode.next = head;
+            return newNode;
+        }
+        int i = 0;
+        Node<Integer> temp = head ;
+        while(i < pos-1){
+            temp = temp.next;
+            i++;
+        }
+        newNode.next= temp.next;
+        temp.next=newNode;
+       return head;
+    }
     public static Node<Integer> takeInput(){
-        Node<Integer> head = null;
+        Node<Integer> head = null , tail=null;
         Scanner sc = new Scanner(System.in);
         int data = sc.nextInt();
         while (data != -1){
             Node<Integer> newNode = new Node<>(data);
             if(head == null){
                 head = newNode;
+                tail =newNode;
             }else {
-                Node<Integer> temp = head;
-                while (temp.next != null){
-                    temp = temp.next;
-                }
-                temp.next=newNode;
+//                Node<Integer> temp = head;
+//                while (temp.next != null){
+//                    temp = temp.next;
+//                }
+//                temp.next=newNode;
+                tail.next = newNode;
+                tail = newNode;
             }
             data = sc.nextInt();
         }
@@ -29,15 +68,20 @@ public class Link_List_use {
         }
     }
     public static void main(String[] args) {
-        Node<Integer> node1 = new Node<>(10);
-        System.out.println(node1.data);
-
-        Node<Integer> node2 = new Node<>(20);
-        node1.next=node2;
-        System.out.println(node1.next);
-        System.out.println(node2.data);
-        System.out.println(node2.next);
+        Scanner sc = new Scanner(System.in);
         Node<Integer> Prashant = takeInput();
+
+//        int pos = sc.nextInt();
+//        System.out.print("Enter the data : ");
+//        int data = sc.nextInt();
+//        Prashant = InsertNode(pos,data,Prashant);
+
+
+        print(Prashant);
+        System.out.print("enter the position at which you want to delete Node : ");
+        int deletePos = sc.nextInt();
+        Prashant=deleteNode(deletePos,Prashant);
+        System.out.println();
         print(Prashant);
 
     }
