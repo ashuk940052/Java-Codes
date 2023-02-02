@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Link_List/Eliminate_duplicates_from_LL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Link_List/Print_Reverse_LinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Link_List/Palindrome_LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +57,19 @@
   }
 }</component>
   <component name="RunManager">
+    <configuration name="Link_List_use" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Link_List.Link_List_use" />
+      <module name="Java Codes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Link_List.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Link_list_use" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Link_List.Link_list_use" />
       <module name="Java Codes" />
@@ -73,6 +85,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Link_List_use" />
         <item itemvalue="Application.Link_list_use" />
       </list>
     </recent_temporary>
@@ -401,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675185102611</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="DSA">
+      <created>1675282427231</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1675282427231</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
