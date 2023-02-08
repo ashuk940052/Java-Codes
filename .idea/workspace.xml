@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Link_List/Insert_Recursively.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Link_List/PrintR.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Link_List/reverse_LL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Link_List/Insert_Recursively.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Link_List/Insert_Recursively.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00001" summary="initial version">
-      <created>1671204077753</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1671204077753</updated>
     </task>
     <task id="LOCAL-00002" summary="initial version">
       <created>1671204531747</created>
@@ -446,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675536184031</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="DSA">
+      <created>1675709437096</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1675709437096</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

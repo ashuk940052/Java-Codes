@@ -32,6 +32,16 @@ public class Insert_Recursively {
         head.next = Insert_recurcive(head.next, pos-1 , ele);
         return head;
     }
+    public static Node<Integer> delete(Node<Integer> head , int pos){
+        if(pos == 0 ){
+            return head.next;
+        }
+        if (head == null){
+            return head;
+        }
+        head.next = delete(head.next , pos-1);
+        return head;
+    }
     public static void printR(Node<Integer> head){
         if (head == null){
             return;
@@ -42,10 +52,8 @@ public class Insert_Recursively {
 
     public static void main(String[] args) {
         Node<Integer> head = takeInput();
-        Insert_recurcive(head, 2 , 10);
+       Insert_recurcive(head, 2 , 10);
+        delete(head,6);
         printR(head);
-
-
-
     }
 }
