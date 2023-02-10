@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Link_List/Reverse_Itratively.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Link_List/Delete_Every_N_Nodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Link_List/Even_After_Odd_LL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,13 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00004" summary="initial version">
-      <created>1671209472426</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1671209472426</updated>
     </task>
     <task id="LOCAL-00005" summary="initial version">
       <created>1671211327623</created>
@@ -444,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675934588304</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="DSA">
+      <created>1675940719417</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1675940719417</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
