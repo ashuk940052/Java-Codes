@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Link_List/Delete_Every_N_Nodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Link_List/Even_After_Odd_LL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/StackFullExeption.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/Stack_Use_class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/Stack_Using_array.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Stack/StackemptyException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,13 +103,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00005" summary="initial version">
-      <created>1671211327623</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1671211327623</updated>
     </task>
     <task id="LOCAL-00006" summary="initial version">
       <created>1671211551978</created>
@@ -445,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675940719417</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="DSA">
+      <created>1676039615762</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1676039615762</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
