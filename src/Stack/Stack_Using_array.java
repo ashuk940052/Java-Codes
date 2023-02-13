@@ -1,7 +1,7 @@
 package Stack;
 
 public class Stack_Using_array {
-    private int data[];
+    private int[] data;
     private int top;
     public Stack_Using_array(){
     data = new int[10];
