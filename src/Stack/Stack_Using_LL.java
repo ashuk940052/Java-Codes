@@ -33,7 +33,7 @@ public class Stack_Using_LL<T> {
           }
           T temp = head.data;
           head = head.next;
-          size = size+1;
+          size = size-1;
           return temp;
     }
 }
