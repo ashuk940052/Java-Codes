@@ -31,7 +31,8 @@ public class Queue_using_array {
     }
     void enqueue(int element) throws queueFullExeption{
         if (size==data.length){
-          throw new queueFullExeption();
+//          throw new queueFullExeption();
+            doubleCapacity();
         }
           if(size==0){
              front=0;
@@ -39,6 +40,21 @@ public class Queue_using_array {
           size++;
           rear = (rear+1) % data.length;
           data[rear] =element;
+    }
+    private void doubleCapacity(){
+        int[] temp = data;
+        data = new int[2*temp.length];
+        int j=0;
+        for (int i= front ; i<temp.length;i++){
+            data[j] = temp[i];
+            j++;
+        }
+        for (int i =0; i<front ; i++){
+            data[j] = temp[i];
+            j++;
+        }
+        front =0;
+        rear = (temp.length-1);
     }
     int dequeue()throws queueEmptyExeption{
         if (size==0){
