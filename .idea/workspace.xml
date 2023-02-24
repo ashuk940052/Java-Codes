@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Queue/Queue_Using_2_Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/recursion/Count_Ways_To_Reach_Nth_Stairs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/recursion/Sort_element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/recursion/Sum_array.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +60,7 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="Link_List_use" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Link_List_use" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Link_List.Link_List_use" />
       <module name="Java Codes" />
       <extension name="coverage">
@@ -88,7 +88,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Link_List_use" />
         <item itemvalue="Application.Link_list_use" />
       </list>
     </recent_temporary>
@@ -101,20 +100,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00015" summary="initial version">
-      <created>1671986980101</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1671986980101</updated>
-    </task>
-    <task id="LOCAL-00016" summary="initial version">
-      <created>1672079201650</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1672079201650</updated>
     </task>
     <task id="LOCAL-00017" summary="initial version">
       <created>1672079213589</created>
@@ -445,7 +430,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677080775442</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="DSA">
+      <created>1677143080043</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1677143080043</updated>
+    </task>
+    <task id="LOCAL-00065" summary="DSA">
+      <created>1677143290615</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1677143290615</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
