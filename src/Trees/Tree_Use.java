@@ -120,6 +120,18 @@ public class Tree_Use {
         }
         return ans;
     }
+    public static int hight_of_tree(Tree_Node<Integer> root){
+        if(root==null){
+            return 0;
+        }
+        int hight =1;
+        for (int i=0;i<root.childern.size();i++){
+            int child_hight = 1+ hight_of_tree(root.childern.get(i));
+            if (child_hight>hight)
+                hight=child_hight;
+        }
+        return hight;
+    }
     public static void main(String[] args) {
 //        Tree_Node<Integer> root = new Tree_Node<Integer>(4);
 //        Tree_Node<Integer> node1 = new Tree_Node<Integer>(2);
@@ -143,6 +155,9 @@ public class Tree_Use {
         System.out.println(Largest);
         int Larger_than_x = Larger_Thant_X(root,30);
         System.out.println(Larger_than_x);
+        System.out.println("----------------Hight-------------");
+        int  hight_of_Tree = hight_of_tree(root);
+        System.out.println(hight_of_Tree);
 
     }
 }
