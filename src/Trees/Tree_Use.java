@@ -62,7 +62,7 @@ public class Tree_Use {
            try {
                Tree_Node<Integer> front_node = Pending_node.dequeue();
                if(front_node != null){
-                   System.out.print(front_node.Data);
+                   System.out.print(front_node.Data+" ");
                    for (int i=0; i < front_node.childern.size() ;i++ ){
                        Pending_node.enqueue(front_node.childern.get(i));
                    }
@@ -93,6 +93,33 @@ public class Tree_Use {
         }
         return sum;
     }
+    public static int Largest_data(Tree_Node<Integer> root){
+        if(root== null){
+            return Integer.MIN_VALUE;
+        }
+        int ans = root.Data;
+        for (int i=0 ;i< root.childern.size(); i++){
+            int child_Largest = Largest_data(root.childern.get(i));
+            if (child_Largest > ans){
+                ans = child_Largest;
+            }
+        }
+        return ans;
+    }
+    public static int Larger_Thant_X(Tree_Node<Integer> root , int x){
+        if(root== null){
+            return Integer.MIN_VALUE;
+        }
+        int ans = 0;
+        if(root.Data > x)
+        {
+            ans++;
+        }
+        for (int i=0 ;i< root.childern.size(); i++){
+             ans += Larger_Thant_X(root.childern.get(i),x);
+        }
+        return ans;
+    }
     public static void main(String[] args) {
 //        Tree_Node<Integer> root = new Tree_Node<Integer>(4);
 //        Tree_Node<Integer> node1 = new Tree_Node<Integer>(2);
@@ -112,6 +139,10 @@ public class Tree_Use {
         System.out.println(Number_Of_Node);
         int sum_of_Tree = sum_Nodes(root);
         System.out.println(sum_of_Tree);
+        int Largest = Largest_data(root);
+        System.out.println(Largest);
+        int Larger_than_x = Larger_Thant_X(root,30);
+        System.out.println(Larger_than_x);
 
     }
 }
