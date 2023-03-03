@@ -1,9 +1,4 @@
 package Trees;
-
-
-import com.sun.source.tree.Tree;
-
-import java.time.temporal.Temporal;
 import java.util.*;
 
 public class Tree_Use {
@@ -84,7 +79,20 @@ public class Tree_Use {
        }
 
     }
-
+    public static int count_Node(Tree_Node<Integer> root){
+        int count =1;
+        for (int i=0 ; i<root.childern.size();i++){
+            count += count_Node(root.childern.get(i));
+        }
+        return count;
+    }
+    public static int sum_Nodes(Tree_Node<Integer> root){
+        int sum = root.Data;
+        for (int i=0; i< root.childern.size();i++){
+            sum += sum_Nodes(root.childern.get(i));
+        }
+        return sum;
+    }
     public static void main(String[] args) {
 //        Tree_Node<Integer> root = new Tree_Node<Integer>(4);
 //        Tree_Node<Integer> node1 = new Tree_Node<Integer>(2);
@@ -100,6 +108,10 @@ public class Tree_Use {
 
         Tree_Node<Integer> root = takeInput_LevelWise();
         print_LevelWise(root);
+        int Number_Of_Node = count_Node(root);
+        System.out.println(Number_Of_Node);
+        int sum_of_Tree = sum_Nodes(root);
+        System.out.println(sum_of_Tree);
 
     }
 }
