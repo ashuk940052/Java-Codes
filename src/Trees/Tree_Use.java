@@ -3,6 +3,7 @@ package Trees;
 
 import com.sun.source.tree.Tree;
 
+import java.time.temporal.Temporal;
 import java.util.*;
 
 public class Tree_Use {
@@ -32,7 +33,7 @@ public class Tree_Use {
     }
     public static Tree_Node<Integer> takeInput_LevelWise(){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter root data :  ");
+        System.out.print("Enter root data : ");
         int rootdata = sc.nextInt();
         Queue_LL<Tree_Node<Integer>> pending_Node = new Queue_LL<>();
         Tree_Node<Integer> root = new Tree_Node<>(rootdata);
@@ -43,7 +44,7 @@ public class Tree_Use {
                 System.out.print("Enter number of Children of " + Front_Node.Data +" : ");
                 int Number_of_children = sc.nextInt();
                 for (int i=0 ; i< Number_of_children ; i++){
-                    System.out.print("Enter " + i +"th child of " + Front_Node.Data+"");
+                    System.out.print("Enter " + i +"th child of " + Front_Node.Data+" ");
                     int child = sc.nextInt();
                     Tree_Node<Integer> Child_Node = new Tree_Node<>(child);
                     Front_Node.childern.add(Child_Node);
@@ -56,9 +57,33 @@ public class Tree_Use {
         }
         return root;
     }
-//    public static  void print_LevelWise(){
-//
-//    }
+   public static  void print_LevelWise(Tree_Node<Integer> root){
+       Queue_LL<Tree_Node<Integer>> Pending_node = new Queue_LL<>();
+       if(root == null)
+           return;
+       Pending_node.enqueue(root);
+       Pending_node.enqueue(null);
+       while (!Pending_node.isEmpty()){
+           try {
+               Tree_Node<Integer> front_node = Pending_node.dequeue();
+               if(front_node != null){
+                   System.out.print(front_node.Data);
+                   for (int i=0; i < front_node.childern.size() ;i++ ){
+                       Pending_node.enqueue(front_node.childern.get(i));
+                   }
+               }else{
+                   System.out.println();
+                   if(!Pending_node.isEmpty()){
+                       Pending_node.enqueue(null);
+                   }
+               }
+
+           } catch (queue_Empty_Exeption e) {
+               //Idher to jindagi mai nahi aaunga !!
+           }
+       }
+
+    }
 
     public static void main(String[] args) {
 //        Tree_Node<Integer> root = new Tree_Node<Integer>(4);
@@ -74,7 +99,7 @@ public class Tree_Use {
 //        System.out.println(root);
 
         Tree_Node<Integer> root = takeInput_LevelWise();
-        print(root);
+        print_LevelWise(root);
 
     }
 }
