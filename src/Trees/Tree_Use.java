@@ -86,6 +86,18 @@ public class Tree_Use {
         }
         return count;
     }
+    public static void Print_at_k(Tree_Node<Integer> root , int k){
+        if(k<0){
+            return;
+        }
+        if(k==0){
+            System.out.print(root.Data+" ");
+            return;
+        }
+        for (int i=0 ;i<root.childern.size();i++){
+            Print_at_k(root.childern.get(i),k-1);
+        }
+    }
     public static int sum_Nodes(Tree_Node<Integer> root){
         int sum = root.Data;
         for (int i=0; i< root.childern.size();i++){
@@ -132,6 +144,24 @@ public class Tree_Use {
         }
         return hight;
     }
+    public static void preorder(Tree_Node<Integer> root){
+        if(root == null){
+            return;
+        }
+        System.out.print(root.Data+" ");
+        for (int i=0 ; i<root.childern.size();i++){
+            preorder(root.childern.get(i));
+        }
+    }
+    public static void postorder(Tree_Node<Integer> root){
+        if(root == null){
+            return;
+        }
+        for (int i=0 ; i<root.childern.size();i++){
+            preorder(root.childern.get(i));
+        }
+        System.out.print(root.Data+" ");
+    }
     public static void main(String[] args) {
 //        Tree_Node<Integer> root = new Tree_Node<Integer>(4);
 //        Tree_Node<Integer> node1 = new Tree_Node<Integer>(2);
@@ -144,6 +174,7 @@ public class Tree_Use {
 //        root.childern.add(node3);
 //        node2.childern.add(node4);
 //        System.out.println(root);
+        Scanner sc = new Scanner(System.in);
 
         Tree_Node<Integer> root = takeInput_LevelWise();
         print_LevelWise(root);
@@ -158,6 +189,14 @@ public class Tree_Use {
         System.out.println("----------------Hight-------------");
         int  hight_of_Tree = hight_of_tree(root);
         System.out.println(hight_of_Tree);
-
+        System.out.println("_______________Print At K______________");
+        int k = sc.nextInt();
+        Print_at_k(root,k);
+        System.out.println();
+        System.out.println("---------Preorder Traversal------------");
+        preorder(root);
+        System.out.println();
+        System.out.println("---------Postorder Traversal--------------------");
+        postorder(root);
     }
 }
