@@ -48,14 +48,14 @@ public class Binary_Tree_Use {
             } catch (queue_Empty_Exeption e) {
                return null;
             }
-            System.out.print("Enter left child data "+front.data+" :");
+            System.out.print("Enter left child data of "+front.data+" :");
             int left_child_data = sc.nextInt();
             if(left_child_data != -1){
                 Binary_TreeNode<Integer> left_root = new Binary_TreeNode<>(left_child_data);
                 pending_Node.enqueue(left_root);
                 front.left = left_root;
             }
-            System.out.print("Enter right child data "+front.data+" :");
+            System.out.print("Enter right child data of "+front.data+" :");
             int right_child_data = sc.nextInt();
             if(right_child_data != -1){
                 Binary_TreeNode<Integer> right_root = new Binary_TreeNode<>(right_child_data);
