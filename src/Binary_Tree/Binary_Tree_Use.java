@@ -65,6 +65,15 @@ public class Binary_Tree_Use {
         }
         return root;
     }
+    public static  int count_Nodes(Binary_TreeNode<Integer> root){
+        if(root == null){
+            return 0;
+        }
+        int count = 1;
+        count += count_Nodes(root.left);
+        count += count_Nodes(root.right);
+        return count;
+    }
     public static void main(String[] args) {
 //        Binary_TreeNode<Integer> root = new Binary_TreeNode<>(5);
 //        Binary_TreeNode<Integer> leftNode = new Binary_TreeNode<>(4);
@@ -77,6 +86,8 @@ public class Binary_Tree_Use {
         Scanner s= new Scanner(System.in);
         Binary_TreeNode<Integer> root = takeInput_Levelwise();
         print_Binart_Tree(root);
-        s.close();
+        int count = count_Nodes(root);
+        System.out.println("Number of node in the tree is :" + count);
+//        s.close();
     }
 }
