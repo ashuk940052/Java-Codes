@@ -48,22 +48,23 @@ public class Binary_Tree_Use {
             }
             if (front != null){
                 System.out.print(front.data+" :");
-                if(front.left==null){
+                if(front.left == null){
                     System.out.print("L:-1");
+
                 }else {
                     System.out.print("L:"+front.left.data);
                     pendingNode.enqueue(root.left);
                 }
-                if(front.right==null){
+                if(front.right == null){
                     System.out.print(",R: -1");
+
 
                 }else {
                     System.out.print(",R: "+front.right.data);
                     pendingNode.enqueue(root.right);
+
                 }
                 System.out.println();
-
-
             }
         }
     }
@@ -155,6 +156,17 @@ public class Binary_Tree_Use {
         print_Depth_at_k(root.right,k-1);
         System.out.println();
     }
+    public static Binary_TreeNode<Integer> removeLeaf(Binary_TreeNode<Integer> root){
+        if(root == null){
+            return null;
+        }
+        if (root.left == null && root.right == null){
+            return null;
+        }
+        root.left = removeLeaf(root.left);
+        root.right = removeLeaf(root.right);
+        return root;
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //        Binary_TreeNode<Integer> root = new Binary_TreeNode<>(5);
@@ -167,11 +179,13 @@ public class Binary_Tree_Use {
 //        System.out.println(root.right.data);
         Scanner s= new Scanner(System.in);
         Binary_TreeNode<Integer> root = takeInput_Levelwise();
-        print_Binart_Tree(root);
+        print_Binary_Tree_levelwise(root);
         int count = count_Nodes(root);
         int sum_of_all_Nodes = sum_of_all_Nodes(root);
         int lasrgest_Node = Largest_node(root);
         int Number_of_leaf = num_of_leafs(root);
+        Binary_TreeNode<Integer> removeleafe = removeLeaf(root);
+        print_Binart_Tree(removeleafe);
         System.out.println("Largest Node is : "+lasrgest_Node);
         System.out.println("Number of leaf is :" + Number_of_leaf);
         System.out.println("Number of node in the tree is :" + count);
