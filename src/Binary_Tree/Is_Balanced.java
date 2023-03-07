@@ -1,5 +1,6 @@
 package Binary_Tree;
 
+import java.awt.desktop.PreferencesEvent;
 import java.util.Scanner;
 
 public class Is_Balanced {
@@ -62,6 +63,33 @@ public class Is_Balanced {
         boolean Is_Right_Balanced = isbalanced(root.right);
 
         return Is_Left_Balance && Is_Right_Balanced;
+    }
+    public static Balanced_Tree_return Is_Balnaced_better_code(Binary_TreeNode<Integer> root){
+        if(root == null){
+            int hight =0;
+            boolean isbal = true;
+            Balanced_Tree_return ans = new Balanced_Tree_return();
+            ans.hight=hight;
+            ans.Is_Balanced = isbal;
+            return ans;
+        }
+
+        Balanced_Tree_return left_Output = Is_Balnaced_better_code(root.left);
+        Balanced_Tree_return right_Output = Is_Balnaced_better_code(root.right);
+        boolean isbal = true;
+        int hight = 1 + Math.max(left_Output.hight,right_Output.hight);
+
+        if (Math.abs(left_Output.hight - right_Output.hight) > 1){
+            isbal = false;
+        }
+        if (!left_Output.Is_Balanced || !right_Output.Is_Balanced){
+            isbal = false;
+        }
+
+        Balanced_Tree_return ans = new Balanced_Tree_return();
+        ans.hight =hight;
+        ans.Is_Balanced = isbal;
+        return ans;
     }
     public static void main(String[] args) {
       Binary_TreeNode<Integer> root = takeInput_Levelwise();
