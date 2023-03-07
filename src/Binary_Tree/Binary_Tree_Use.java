@@ -1,5 +1,6 @@
 package Binary_Tree;
 
+import java.io.FilterOutputStream;
 import java.util.Scanner;
 
 public class Binary_Tree_Use {
@@ -30,6 +31,41 @@ public class Binary_Tree_Use {
         System.out.println(ToBe_printed);
         print_Binart_Tree(root.left);
         print_Binart_Tree(root.right);
+    }
+    public static void print_Binary_Tree_levelwise(Binary_TreeNode<Integer> root){
+        if (root==null){
+            return;
+        }
+        Queue_LL<Binary_TreeNode<Integer>> pendingNode = new Queue_LL<>();
+        pendingNode.enqueue(root);
+
+        while (!pendingNode.isEmpty()){
+           Binary_TreeNode<Integer> front ;
+            try {
+                front = pendingNode.dequeue();
+            } catch (queue_Empty_Exeption e) {
+                return;
+            }
+            if (front != null){
+                System.out.print(front.data+" :");
+                if(front.left==null){
+                    System.out.print("L:-1");
+                }else {
+                    System.out.print("L:"+front.left.data);
+                    pendingNode.enqueue(root.left);
+                }
+                if(front.right==null){
+                    System.out.print(",R: -1");
+
+                }else {
+                    System.out.print(",R: "+front.right.data);
+                    pendingNode.enqueue(root.right);
+                }
+                System.out.println();
+
+
+            }
+        }
     }
     public static  Binary_TreeNode<Integer> takeInput_Levelwise(){
         Scanner sc = new Scanner(System.in);
@@ -74,7 +110,24 @@ public class Binary_Tree_Use {
         count += count_Nodes(root.right);
         return count;
     }
+    public static int sum_of_all_Nodes(Binary_TreeNode<Integer> root){
+        if(root == null){
+            return 0;
+        }
+        int small_sum = sum_of_all_Nodes(root.left)+sum_of_all_Nodes(root.right);
+        return small_sum +root.data;
+    }
+    public static boolean fint_x(Binary_TreeNode<Integer> root,int x){
+        if (root==null){
+            return false;
+        }
+        if(root.data == x){
+            return true;
+        }
+        return (fint_x(root.left,x) || fint_x(root.right,x));
+    }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 //        Binary_TreeNode<Integer> root = new Binary_TreeNode<>(5);
 //        Binary_TreeNode<Integer> leftNode = new Binary_TreeNode<>(4);
 //        Binary_TreeNode<Integer> rightNode= new Binary_TreeNode<>(3);
@@ -87,7 +140,14 @@ public class Binary_Tree_Use {
         Binary_TreeNode<Integer> root = takeInput_Levelwise();
         print_Binart_Tree(root);
         int count = count_Nodes(root);
+        int sum_of_all_Nodes = sum_of_all_Nodes(root);
+
         System.out.println("Number of node in the tree is :" + count);
+        System.out.println("summ of all the nodes is :" + sum_of_all_Nodes);
+        System.out.print("Enter the element you want to search in Binary Tree : ");
+        int X  = sc.nextInt();
+        boolean find_X = fint_x(root,X);
+        System.out.println(find_X);
 //        s.close();
     }
 }
