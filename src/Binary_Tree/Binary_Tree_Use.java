@@ -126,6 +126,35 @@ public class Binary_Tree_Use {
         }
         return (fint_x(root.left,x) || fint_x(root.right,x));
     }
+    public static int Largest_node(Binary_TreeNode<Integer> root){
+        if ( root == null ) {
+            return -1;
+        }
+        int leftside = Largest_node(root.left);
+        int rightside = Largest_node(root.right);
+        return Math.max(root.data , Math.max(leftside , rightside));
+    }
+    public static int num_of_leafs(Binary_TreeNode<Integer> root){
+        if(root == null){
+            return 0;
+        }
+        if (root.left == null && root.right == null){
+            return 1;
+        }
+        return num_of_leafs(root.left) + num_of_leafs(root.right);
+    }
+    public static void print_Depth_at_k(Binary_TreeNode<Integer> root ,int k){
+        if (root ==null){
+            return;
+        }
+        if(k == 0){
+            System.out.print(root.data +" ");
+            return;
+        }
+        print_Depth_at_k(root.left,k-1);
+        print_Depth_at_k(root.right,k-1);
+        System.out.println();
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //        Binary_TreeNode<Integer> root = new Binary_TreeNode<>(5);
@@ -141,13 +170,18 @@ public class Binary_Tree_Use {
         print_Binart_Tree(root);
         int count = count_Nodes(root);
         int sum_of_all_Nodes = sum_of_all_Nodes(root);
-
+        int lasrgest_Node = Largest_node(root);
+        int Number_of_leaf = num_of_leafs(root);
+        System.out.println("Largest Node is : "+lasrgest_Node);
+        System.out.println("Number of leaf is :" + Number_of_leaf);
         System.out.println("Number of node in the tree is :" + count);
         System.out.println("summ of all the nodes is :" + sum_of_all_Nodes);
+        System.out.println("Enter the depth of Node You want : ");
+        int depth = sc.nextInt();
+        print_Depth_at_k(root,depth);
         System.out.print("Enter the element you want to search in Binary Tree : ");
         int X  = sc.nextInt();
         boolean find_X = fint_x(root,X);
         System.out.println(find_X);
-//        s.close();
     }
 }
