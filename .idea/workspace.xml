@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Binary_Tree/Balanced_Tree_return.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Binary_Tree/Is_Balanced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Binary_Tree/Is_Balanced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Binary_Tree/Diameter_of_Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Binary_Tree/Diameter_of_Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00033" summary="initial version">
-      <created>1673626579120</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1673626579120</updated>
     </task>
     <task id="LOCAL-00034" summary="initial version">
       <created>1673888635221</created>
@@ -421,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678210313444</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="DSA">
+      <created>1678213500583</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1678213500583</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
