@@ -53,7 +53,7 @@ public class Binary_Tree_Use {
 
                 }else {
                     System.out.print("L:"+front.left.data);
-                    pendingNode.enqueue(root.left);
+                    pendingNode.enqueue(front.left);
                 }
                 if(front.right == null){
                     System.out.print(",R: -1");
@@ -61,8 +61,7 @@ public class Binary_Tree_Use {
 
                 }else {
                     System.out.print(",R: "+front.right.data);
-                    pendingNode.enqueue(root.right);
-
+                    pendingNode.enqueue(front.right);
                 }
                 System.out.println();
             }
