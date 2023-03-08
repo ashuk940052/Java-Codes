@@ -1,4 +1,5 @@
 package Binary_Tree;
+import java.awt.event.HierarchyBoundsAdapter;
 import java.util.Scanner;
 
 public class Diameter_of_Tree {
@@ -53,9 +54,30 @@ public class Diameter_of_Tree {
         int Option3 = diameter(root.right);
         return Math.max(Option1,Math.max(Option2,Option3));
     }
+    public static Pair<Integer,Integer> hight_diameter(Binary_TreeNode<Integer> root){
+        if (root == null){
+            Pair<Integer,Integer> output = new Pair<>();
+            output.first=0;
+            output.second =0;
+            return output;
+        }
+        Pair<Integer, Integer> lo = hight_diameter(root.left);
+        Pair<Integer,Integer> ro = hight_diameter(root.right);
+        int hight = 1 + Math.max(lo.first,ro.first);
+
+        int Option1 = lo.first + ro.first;
+        int Option2 = lo.second;
+        int Option3 = ro.second;
+        int diameter = Math.max(Option1,Math.max(Option2,Option3));
+
+        Pair<Integer,Integer> Final_ans = new Pair<>();
+        Final_ans.first = hight;
+        Final_ans.second = diameter;
+        return Final_ans;
+    }
     public static void main(String[] args) {
       Binary_TreeNode<Integer> root = takeInput_Levelwise();
-      int diameter = diameter(root);
-      System.out.println("Diamenter of Tree : " + diameter);
+      System.out.println("Diamenter of Tree : " + hight_diameter(root).second);
+      System.out.println("Hight of Tree :" + hight_diameter(root).first);
     }
 }
