@@ -1,5 +1,6 @@
 package Binary_Tree;
 
+import java.util.AbstractCollection;
 import java.util.Scanner;
 
 public class Check_BST {
@@ -34,6 +35,28 @@ public class Check_BST {
         }else {
             return false;
         }
+    }
+    public static Pair<Boolean,Pair<Integer,Integer>> isBST_Better(Binary_TreeNode<Integer> root){
+        if(root == null){
+            Pair<Boolean,Pair<Integer,Integer>> answer = new Pair<>();
+            answer.first = true;
+            answer.second = new Pair<Integer,Integer>();
+            answer.second.first = Integer.MAX_VALUE;
+            answer.second.second = Integer.MIN_VALUE;
+            return answer;
+        }
+        Pair<Boolean,Pair<Integer,Integer>> leftOutput = isBST_Better(root.left);
+        Pair<Boolean,Pair<Integer,Integer>> rightOutput = isBST_Better(root.right);
+        int min = Math.min(root.data,Math.min(leftOutput.second.first,rightOutput.second.first));
+        int max = Math.max(root.data , Math.max(leftOutput.second.second,rightOutput.second.second));
+        boolean isBST =(root.data > leftOutput.second.second) && (root.data <= rightOutput.second.first)
+                && leftOutput.first && rightOutput.first;
+        Pair<Boolean,Pair<Integer,Integer>> final_answer = new Pair<>();
+        final_answer.first = isBST;
+        final_answer.second = new Pair<>();
+        final_answer.second.first = min;
+        final_answer.second.second = max;
+        return final_answer;
     }
     public static  Binary_TreeNode<Integer> takeInput_Levelwise(){
         Scanner sc = new Scanner(System.in);
@@ -74,5 +97,10 @@ public class Check_BST {
         Binary_TreeNode<Integer> root = takeInput_Levelwise();
         boolean ans = isBST(root);
         System.out.println(ans);
+        System.out.println("----------------BST CHECK Better-----------------------");
+        System.out.println("Check BST = "+ isBST_Better(root).first);
+        System.out.println("MIN element = "+ isBST_Better(root).second.first);
+        System.out.println("MAX element = "+ isBST_Better(root).second.second);
+
     }
 }
