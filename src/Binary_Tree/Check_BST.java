@@ -2,34 +2,37 @@ package Binary_Tree;
 
 import java.util.Scanner;
 
-public class Binary_Search_Tree {
-    public static boolean BST(Binary_TreeNode<Integer> root , int s){
+public class Check_BST {
+    public static int maximum(Binary_TreeNode<Integer> root) {
         if(root == null){
+            return Integer.MIN_VALUE;
+        }
+        return Math.max(root.data,Math.max(maximum(root.left) ,maximum(root.right)));
+    }
+    public static int minimum(Binary_TreeNode<Integer> root) {
+        if(root == null){
+            return Integer.MAX_VALUE;
+        }
+        return Math.min(root.data,Math.min(minimum(root.left), minimum(root.right)));
+    }
+    public static boolean isBST(Binary_TreeNode<Integer> root){
+        if(root == null){
+            return true;
+        }
+        int leftMax = maximum(root.left);
+        int rightMin = minimum(root.right);
+        if(root.data <= leftMax){
             return false;
         }
-        boolean ans = true;
-        if (root.data == s){
-            return ans;
+        if(root.data >= rightMin){
+            return false;
         }
-        if (root.data > s ){
-            ans = BST(root.left,s);
+        boolean isLeft_BST = isBST(root.left);
+        boolean isRight_BST = isBST(root.right);
+        if(isLeft_BST && isRight_BST){
+            return true;
         }else {
-            ans = BST(root.right,s);
-        }
-        return ans;
-    }
-    public static void print_IN_Range(Binary_TreeNode<Integer> root , int min , int max){
-        if(root == null){
-            return;
-        }
-        if (min < root.data){
-            print_IN_Range(root.left , min , max);
-        }
-        if(root.data >= min && root.data <= max){
-            System.out.print(root.data+" ");
-        }
-        if(max > root.data){
-            print_IN_Range(root.right,min , max);
+            return false;
         }
     }
     public static  Binary_TreeNode<Integer> takeInput_Levelwise(){
@@ -66,17 +69,10 @@ public class Binary_Search_Tree {
         }
         return root;
     }
+
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         Binary_TreeNode<Integer> root = takeInput_Levelwise();
-        System.out.println("Enter the element you want to search : ");
-        int S = sc.nextInt();
-        boolean ans = BST(root,S);
+        boolean ans = isBST(root);
         System.out.println(ans);
-        System.out.println("To print in range : ");
-        System.out.println("Enter the min and max element ");
-        int min = sc.nextInt();
-        int max = sc.nextInt();
-        print_IN_Range(root,min,max);
     }
 }
