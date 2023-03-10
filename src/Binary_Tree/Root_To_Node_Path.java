@@ -1,4 +1,5 @@
 package Binary_Tree;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -24,6 +25,31 @@ public class Root_To_Node_Path {
         }else {
             return null;
         }
+    }
+    public static ArrayList<Integer> get_Root_To_Node_BST(Binary_TreeNode<Integer> root ,int data){
+        if(root == null){
+            return null;
+        }
+        if(root.data == data){
+            ArrayList<Integer> Output = new ArrayList<>();
+            Output.add(root.data);
+            return Output;
+        }
+        if(data < root.data){
+            ArrayList<Integer> Left_output = get_Root_To_Node_BST(root.left,data);
+            if(Left_output != null){
+                Left_output.add(root.data);
+                return Left_output;
+            }
+        }
+        if(data > root.data){
+            ArrayList<Integer> Right_output = get_Root_To_Node_BST(root.right,data);
+            if(Right_output != null){
+                Right_output.add(root.data);
+                return Right_output;
+            }
+        }
+        return null;
     }
     public static  Binary_TreeNode<Integer> takeInput_Levelwise(){
         Scanner sc = new Scanner(System.in);
@@ -70,5 +96,18 @@ public class Root_To_Node_Path {
             System.out.print( ans.get(i) +",");
         }
         System.out.print(">");
+        System.out.println();
+        System.out.println("---------------------------------TRY WITH BST --------------------------------------");
+
+        Binary_TreeNode<Integer> root2 = takeInput_Levelwise() ;
+        System.out.print("Enter the data Who's Path you want : ");
+        int data2 = sc.nextInt();
+        ArrayList<Integer> ans2 = get_Root_To_Node_BST(root,data);
+        System.out.print("<");
+        for (int i =0 ; i< ans2.size() ; i++){
+            System.out.print( ans2.get(i) +",");
+        }
+        System.out.print(">");
+
     }
 }
