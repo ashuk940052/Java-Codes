@@ -1,8 +1,5 @@
 package Binary_Tree;
-
-import java.util.AbstractCollection;
 import java.util.Scanner;
-
 public class Check_BST {
     public static int maximum(Binary_TreeNode<Integer> root) {
         if(root == null){
