@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Binary_Tree/BTS_Class.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Binary_Tree/Root_To_Node_Path.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Binary_Tree/Root_To_Node_Path.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Binary_Tree/BTS_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Binary_Tree/BTS_Class.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00044" summary="DSA">
-      <created>1675162181231</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1675162181231</updated>
     </task>
     <task id="LOCAL-00045" summary="DSA">
       <created>1675185102611</created>
@@ -421,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678460758547</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="DSA">
+      <created>1678464460601</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1678464460601</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
