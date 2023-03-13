@@ -79,9 +79,6 @@ public class BTS_Class {
     public void printTree(){
         printTree(root);
     }
-
-
-
     public static void main(String[] args) {
        BTS_Class BST = new BTS_Class();
        BST.insert(10);
