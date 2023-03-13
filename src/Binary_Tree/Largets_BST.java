@@ -1,29 +1,29 @@
 package Binary_Tree;
 
 import java.util.Scanner;
-
 public class Largets_BST {
 
     public static  int Largest_BST_Sub_Tree(Binary_TreeNode<Integer> root){
         return Largest_BST_Sub_Tree_1(root).second.second;
     }
-    public static pair<pair<Integer,Integer>,pair<Boolean,Integer>> Largest_BST_Sub_Tree_1(Binary_TreeNode<Integer> root){
+    public static Pair<Pair<Integer,Integer>,Pair<Boolean,Integer>> Largest_BST_Sub_Tree_1(Binary_TreeNode<Integer> root){
         if(root == null){
-            pair<Integer,Integer> innerPair1 = new pair<>();
-            pair<Boolean,Integer> innerPair2 = new pair<>();
-            pair<pair<Integer,Integer>, pair<Boolean,Integer>> ansPair = new pair<>();
+            Pair<Integer,Integer> innerPair1 = new Pair<>();
+            Pair<Boolean,Integer> innerPair2 = new Pair<>();
+            Pair<Pair<Integer,Integer>, Pair<Boolean,Integer>> ansPair = new Pair<>();
              innerPair1.first = Integer.MAX_VALUE;
              innerPair1.second = Integer.MIN_VALUE;
              innerPair2.first = true;
              innerPair2.second = 0;
              ansPair.first = innerPair1;
              ansPair.second = innerPair2;
+             return ansPair;
             }
-         pair<pair<Integer,Integer> , pair<Boolean,Integer>> LeftansPair= Largest_BST_Sub_Tree_1(root.left);
-         pair<pair<Integer,Integer> , pair<Boolean,Integer>>  RightansPair= Largest_BST_Sub_Tree_1(root.right);
-         pair<pair<Integer,Integer>,pair<Boolean,Integer>> anspair = new pair<>();
-         pair<Integer,Integer> Inner_Pair1 = new pair<>();
-         pair<Boolean,Integer> Inner_Pair2 = new pair<>();
+         Pair<Pair<Integer,Integer> , Pair<Boolean,Integer>> LeftansPair= Largest_BST_Sub_Tree_1(root.left);
+         Pair<Pair<Integer,Integer> , Pair<Boolean,Integer>>  RightansPair= Largest_BST_Sub_Tree_1(root.right);
+         Pair<Pair<Integer,Integer>, Pair<Boolean,Integer>> anspair = new Pair<>();
+         Pair<Integer,Integer> Inner_Pair1 = new Pair<>();
+         Pair<Boolean,Integer> Inner_Pair2 = new Pair<>();
          Inner_Pair1.first = Math.min(Math.min(LeftansPair.first.first,RightansPair.first.first), root.data);
          Inner_Pair1.second = Math.max(Math.max(LeftansPair.first.second,LeftansPair.first.second),root.data);
          Inner_Pair2.first = LeftansPair.second.first && RightansPair.second.first && (LeftansPair.first.first < root.data)
@@ -72,14 +72,9 @@ public class Largets_BST {
         return root;
     }
 
-
     public static void main(String[] args) {
         Binary_TreeNode<Integer> root = takeInput_Levelwise();
         int n = Largest_BST_Sub_Tree(root);
         System.out.println("Largest sub tree value "+n);
     }
-    }
-class pair<T,V>{
-    T first;
-    V second;
 }
