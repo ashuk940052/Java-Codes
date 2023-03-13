@@ -26,8 +26,8 @@ public class Largets_BST {
          Pair<Boolean,Integer> Inner_Pair2 = new Pair<>();
          Inner_Pair1.first = Math.min(Math.min(LeftansPair.first.first,RightansPair.first.first), root.data);
          Inner_Pair1.second = Math.max(Math.max(LeftansPair.first.second,LeftansPair.first.second),root.data);
-         Inner_Pair2.first = LeftansPair.second.first && RightansPair.second.first && (LeftansPair.first.first < root.data)
-                 && (RightansPair.first.second > root.data) ;
+         Inner_Pair2.first = LeftansPair.second.first && RightansPair.second.first && (LeftansPair.first.second < root.data)
+                 && (RightansPair.first.first > root.data) ;
          if (Inner_Pair2.first){
              Inner_Pair2.second = Math.max(LeftansPair.second.second,RightansPair.second.second)+1;
          }else {
