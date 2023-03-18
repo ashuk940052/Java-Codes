@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
+      <change afterPath="$PROJECT_DIR$/src/HashMaps/OurMap_Use.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HashMaps/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMaps/Map.java" afterDir="false" />
     </list>
@@ -76,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00052" summary="DSA">
-      <created>1675934588304</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1675934588304</updated>
     </task>
     <task id="LOCAL-00053" summary="DSA">
       <created>1675940719417</created>
@@ -420,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679075754472</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="DSA">
+      <created>1679138402071</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1679138402071</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
