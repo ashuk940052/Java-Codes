@@ -49,7 +49,7 @@ public class Map< K,V > {
            head = head.next;
        }
        head = bucket.get(BucketIndex);
-       MapNode<K,V> newElement = new MapNode<K,V>(key , value);
+       MapNode<K,V> newElement = new MapNode<>(key , value);
        size++;
        newElement.next = head;
        bucket.set(BucketIndex , newElement);
