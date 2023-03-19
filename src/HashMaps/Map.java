@@ -1,5 +1,4 @@
 package HashMaps;
-
 import java.util.ArrayList;
 
 public class Map< K,V > {
@@ -9,7 +8,7 @@ public class Map< K,V > {
    public Map(){
        number_Of_Buckets =5;
        bucket = new ArrayList<>();
-       for(int i=0 ;i<20 ; i++){
+       for(int i=0 ;i<number_Of_Buckets ; i++){
            bucket.add(null);
        }
    }
@@ -17,8 +16,8 @@ public class Map< K,V > {
        int hash_Code = key.hashCode();
        return hash_Code % number_Of_Buckets;
    }
-   public double load_Factorr(){
-       return (0.1*size) / number_Of_Buckets;
+   public double load_Factor(){
+       return (1.0 *size)/number_Of_Buckets;
    }
    private void Rehash(){
        System.out.println("Rehashing : Buckets :-" + number_Of_Buckets +" Size :-"+ size );
@@ -31,11 +30,13 @@ public class Map< K,V > {
        number_Of_Buckets *= 2;
        for(int i=0; i< temp.size() ; i++){
            MapNode< K, V > head = temp.get(i);
-           K key = head.key;
-           V value = head.value;
-           insert(key,value);
+           while (head != null) {
+               K key = head.key;
+               V value = head.value;
+               insert(key, value);
+               head = head.next;
+           }
        }
-       
    }
    public void insert(K key , V value){
        int BucketIndex = getBucket_Index(key);
@@ -47,12 +48,12 @@ public class Map< K,V > {
            }
            head = head.next;
        }
+       head = bucket.get(BucketIndex);
        MapNode<K,V> newElement = new MapNode<K,V>(key , value);
        size++;
-       head = bucket.get(BucketIndex);
        newElement.next = head;
        bucket.set(BucketIndex , newElement);
-       double loadFactor = (0.1*size)/number_Of_Buckets;
+       double loadFactor = (1.0 *size)/number_Of_Buckets;
        if(loadFactor > 0.7){
            Rehash();
        }

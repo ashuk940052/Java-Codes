@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/HashMaps/OurMap_Use.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HashMaps/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMaps/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashMaps/OurMap_Use.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMaps/OurMap_Use.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00053" summary="DSA">
-      <created>1675940719417</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1675940719417</updated>
     </task>
     <task id="LOCAL-00054" summary="DSA">
       <created>1676039615762</created>
@@ -421,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679138402071</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="DSA">
+      <created>1679141117076</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1679141117077</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
