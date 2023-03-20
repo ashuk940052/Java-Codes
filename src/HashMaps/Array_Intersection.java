@@ -22,6 +22,19 @@ public class Array_Intersection {
              }
          }
      }
+     private static String setPrint(String str ){
+         HashMap<Character,Integer> map = new HashMap<>();
+         String s = "";
+         for(int i =0 ;i< str.length() ; i++){
+             char ch = str.charAt(i);
+             if(!map.containsKey(ch)){
+                s = s + ch;
+                 map.put(str.charAt(i), 1);
+             }
+
+         }
+         return s;
+     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of first Array : ");
@@ -38,5 +51,11 @@ public class Array_Intersection {
             arr2[i] = sc.nextInt();
         }
         Intersection(arr1,arr2);
+        System.out.println("--------------------------Try Unique Character Function -------------------------------");
+        System.out.println("           ");
+        System.out.print("Enter any string : ");
+        String s = sc.next();
+        String ans = setPrint(s);
+        System.out.println(ans);
     }
 }
