@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
+      <change afterPath="$PROJECT_DIR$/src/HashMaps/Array_Intersection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMaps/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMaps/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HashMaps/OurMap_Use.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashMaps/OurMap_Use.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,20 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00054" summary="DSA">
-      <created>1676039615762</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1676039615762</updated>
-    </task>
-    <task id="LOCAL-00055" summary="DSA">
-      <created>1676312377556</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1676312377556</updated>
     </task>
     <task id="LOCAL-00056" summary="DSA">
       <created>1676313768553</created>
@@ -421,7 +406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679141117077</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="DSA">
+      <created>1679242339975</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1679242339975</updated>
+    </task>
+    <task id="LOCAL-00104" summary="DSA">
+      <created>1679242414155</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1679242414155</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
