@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Priority_Queue/PriorityQueueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Priority_Queue/Priority_Queue_Use.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Priority_Queue/Priority_queue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Priority_Queue/Priority_Queue_Use.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Priority_Queue/Priority_Queue_Use.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,13 +76,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00058" summary="DSA">
-      <created>1676454110069</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1676454110069</updated>
     </task>
     <task id="LOCAL-00059" summary="DSA">
       <created>1676456955215</created>
@@ -422,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679333807390</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="DSA">
+      <created>1679939472187</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1679939472188</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
