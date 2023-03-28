@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
+      <change afterPath="$PROJECT_DIR$/src/Priority_Queue/K_Largest_Element.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Priority_Queue/Priority_Queue_Use.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Priority_Queue/Priority_Queue_Use.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Priority_Queue_Use" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Priority_Queue_Use" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Priority_Queue.Priority_Queue_Use" />
       <module name="Java Codes" />
       <extension name="coverage">
@@ -82,11 +82,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Priority_Queue_Use" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
