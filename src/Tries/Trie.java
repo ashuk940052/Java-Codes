@@ -17,8 +17,22 @@ public class Trie {
         }
         add(child,word.substring(1));
     }
+    private  boolean search(Trie_Node root , String word){
+        if(word.length() ==0){
+            return root.isTerminating;
+        }
+        int childIndex = word.charAt(0)-'a';
+        Trie_Node child = root.children[childIndex];
+        if(child == null){
+            return false;
+        }
+        return search(child,word.substring(1));
+    }
     public void add(String word){
       add(root,word);
+    }
+    public boolean search(String word){
+        return search(root , word);
     }
 
 }
