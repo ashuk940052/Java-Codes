@@ -7,5 +7,9 @@ public class Tries_Use {
         t.add("new");
         t.add("news");
         System.out.println(t.search("new"));
+        t.remove("new");
+        System.out.println(t.search("new"));
+        System.out.println(t.search("news"));
+
     }
 }
