@@ -1,5 +1,4 @@
 package Tries;
-
 public class Tries_Use {
     public static void main(String[] args) {
         Trie t = new Trie();
