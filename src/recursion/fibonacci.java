@@ -25,13 +25,24 @@ public class fibonacci {
         storage[n] = fibM(n-1,storage) + fibM(n-2,storage);
         return storage[n];
     }
+    public static int fiboDP(int n){
+        int[] storage = new int[n+1];
+        storage[0] = 0;
+        storage[1] = 1;
+        for(int i=2 ; i <=n ;i++){
+            storage[i] = storage[i-1]+storage[i-2];
+        }
+        return storage[n];
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter any Number : ");
         int n = sc.nextInt();
-        int N = fibo(n);
-        int M = fibM(n);
-        System.out.println("fibo :- "+ N );
-        System.out.println("fiboM :- " + M );
+        System.out.println("fiboDP :- "+fiboDP(n));
+        System.out.println("fiboM :- " + fibM(n) );//Time Complexity n
+        System.out.println("fibo :- "+ fibo(n));//Time Complexity 2^n
+
+
     }
 }
