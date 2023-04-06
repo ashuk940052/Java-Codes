@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
+      <change afterPath="$PROJECT_DIR$/src/DP/MIn_Count_Of_Squar_ToNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Number_Of_Balanced.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DP/Min_Step_To_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DP/Min_Step_To_1.java" afterDir="false" />
     </list>
@@ -69,21 +71,6 @@
       <recent name="Binary_Tree" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Priority_Queue_Use" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Priority_Queue.Priority_Queue_Use" />
-      <module name="Java Codes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Priority_Queue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -92,13 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00071" summary="DSA">
-      <created>1677864423624</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1677864423624</updated>
     </task>
     <task id="LOCAL-00072" summary="DSA">
       <created>1677867035804</created>
@@ -436,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680724275970</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="DSA">
+      <created>1680726698692</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1680726698693</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

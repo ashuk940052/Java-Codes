@@ -51,6 +51,25 @@ public class Min_Step_To_1 {
         return Storage[n];
 
     }
+    public static int countStepDp(int n){
+        int[] storage = new int[n+1];
+        storage[1] = 0;
+        for(int i=2 ; i<=n ;i++){
+            int min = storage[i-1];
+            if(i % 3 == 0){
+                if(min > storage[i/3]){
+                    min = storage[i/3];
+                }
+            }
+            if(i % 2 == 0){
+                if(min > storage[i/2]){
+                    min = storage[i/2];
+                }
+            }
+            storage[i] = 1+min;
+        }
+        return storage[n];
+    }
     public static void main(String[] args) {
      Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number : ");
@@ -58,5 +77,6 @@ public class Min_Step_To_1 {
      int ans = countSteps(n);
         System.out.println(ans);
         System.out.println(countStepsM(n));
+        System.out.println(countStepDp(n));
     }
 }
