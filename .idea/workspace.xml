@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/DP/Longest_Common_SubSequencs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DP/Min_Cost_Path.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DP/Edit_Distance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,13 +77,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00073" summary="DSA">
-      <created>1677869492669</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1677869492669</updated>
     </task>
     <task id="LOCAL-00074" summary="DSA">
       <created>1677961875048</created>
@@ -422,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680806885942</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="DSA">
+      <created>1680895904670</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1680895904670</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
