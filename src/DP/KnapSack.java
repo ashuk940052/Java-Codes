@@ -27,9 +27,9 @@ public class KnapSack {
         int[] weight = new int[n];
         int[] value = new int[n];
         System.out.print("Weight :- ");
-        for(int i=0; i< n ;i++){
+         for(int i=0; i< n ;i++){
             weight[i] = sc.nextInt();
-        }
+          }
         System.out.print("Value :- ");
         for(int i=0; i< n ;i++){
             value[i] = sc.nextInt();
