@@ -13,9 +13,13 @@ public class Graph {
             }
         }
     }
-    public static void print(int[][] edges , int sv ){
+    public static void print(int[][] edges ){
         boolean[] visited = new boolean[edges.length];
-        printHelper(edges,sv,visited);
+        for(int i=0 ;i< edges.length ;i++) {
+            if(!visited[i]) {
+                printHelper(edges, i, visited);
+            }
+        }
     }
     public static void main(String[] args) {
         int n ; //number of vertices
@@ -30,6 +34,6 @@ public class Graph {
             edges[fv][ev] = 1;
             edges[ev][fv] =1;
         }
-        print(edges,0);
+        print(edges);
     }
 }
