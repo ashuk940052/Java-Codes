@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
-      <change afterPath="$PROJECT_DIR$/src/Graph/Kruskals_Algorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tik_Tak_Toe/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tik_Tak_Toe/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tik_Tak_Toe/TikTakTeo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,13 +81,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00080" summary="DSA">
-      <created>1678185279037</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1678185279037</updated>
     </task>
     <task id="LOCAL-00081" summary="DSA">
       <created>1678210313443</created>
@@ -423,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681071598961</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="DSA">
+      <created>1681403991495</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1681403991495</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
