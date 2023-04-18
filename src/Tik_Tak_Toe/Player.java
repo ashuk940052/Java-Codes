@@ -8,7 +8,7 @@ public class Player {
         setname(name);
         setSymbol(symbol);
     }
-    private void setSymbol(char symbol) {
+   public void setSymbol(char symbol) {
         if(symbol != '\0'){
             this.symbol = symbol;
         }
