@@ -5,6 +5,11 @@ public class TikTakTeo {
     private Player player1, player2;
     private Board board;
 
+    public static void main(String[] args) {
+        TikTakTeo t = new TikTakTeo();
+        t.StartGame();
+    }
+
     public void StartGame() {
         Scanner sc = new Scanner(System.in);
         //Player Input
@@ -34,24 +39,31 @@ public class TikTakTeo {
                 if (status != board.INVALID) {
                     Player1Turn = false;
                     Board.print();
-
+                } else {
+                    System.out.println("Invalid move !!... PLZ TRY Again ...");
+                }
+            } else {
+                System.out.println("Player 2 -" + player1.getName() + "'s Turn ");
+                System.out.println("Enter x : ");
+                int x = sc.nextInt();
+                System.out.println("Enter y : ");
+                int y = sc.nextInt();
+                status = board.move(player2.getSymbol(), x, y);
+                if (status == board.INVALID) {
+                    Player1Turn = false;
+                    Board.print();
+                } else {
+                    System.out.println("Invalid move !!... PLZ TRY Again ...");
                 }
             }
-            else{
-                    System.out.println("Player 2 -" + player1.getName() + "'s Turn ");
-                    System.out.println("Enter x : ");
-                    int x = sc.nextInt();
-                    System.out.println("Enter y : ");
-                    int y = sc.nextInt();
-                    status = board.move(player2.getSymbol(), x, y);
-                    if (status == board.INVALID) {
-                        Player1Turn = false;
-                        Board.print();
-                    }
 
-
-                }
-
+        }
+        if(status == Board.PLAYER_1_WINS){
+            System.out.println("Player 1-"+player1.getName()+" wins !!" );
+        }else if(status == Board.PLAYER_2_WINS){
+            System.out.println("Player 2-"+player2.getName()+" wins !!" );
+        }else {
+            System.out.println("Draw !!!");
         }
     }
         private Player takePlayerInput ( int num){
