@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bf508e34-377b-4459-b8e9-715087bc1ddc" name="Changes" comment="DSA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tik_Tak_Toe/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tik_Tak_Toe/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tik_Tak_Toe/TikTakTeo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tik_Tak_Toe/TikTakTeo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dimond_Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dimond_Pattern.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,13 +79,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671203928520</updated>
-    </task>
-    <task id="LOCAL-00083" summary="DSA">
-      <created>1678214120555</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1678214120555</updated>
     </task>
     <task id="LOCAL-00084" summary="DSA">
       <created>1678253440167</created>
@@ -424,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681841471735</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="DSA">
+      <created>1681919005681</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1681919005681</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

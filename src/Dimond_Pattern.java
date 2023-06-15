@@ -31,3 +31,4 @@ public class Dimond_Pattern {
 
     }
 }
+
